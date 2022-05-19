@@ -23,7 +23,7 @@ resource "aws_subnet" "pubsub1" {
   cidr_block = var.pubsub1cidr
 
   tags = {
-    Name = "acpc-pub1"
+    Name = "acpc-publicA"
   }
 }
 ##
@@ -32,7 +32,7 @@ resource "aws_subnet" "pubsub2" {
   cidr_block = var.pubsub2cidr
 
   tags = {
-    Name = "acpc-pub2"
+    Name = "acpc-publicB"
   }
 }
 ##
@@ -41,7 +41,7 @@ resource "aws_subnet" "privsub1" {
   cidr_block = var.privsub1cidr
 
   tags = {
-    Name = "acpc-priv1"
+    Name = "acpc-privateA"
   }
 }
 ##
@@ -50,7 +50,7 @@ resource "aws_subnet" "privsub2" {
   cidr_block = var.privsub2cidr
 
   tags = {
-    Name = "acpc-priv2"
+    Name = "acpc-privateB"
   }
 }
 
